@@ -1,0 +1,17 @@
+# Create a database.
+create database atmsimulator;
+
+# Create a table to store the value of Signup1.
+create table signup (formno varchar(20), name varchar(30), father_name varchar(30), mother_name varchar(30), dob varchar(20), phone varchar(20), email varchar(30), gender varchar(20), marital_status varchar(20), address varchar(40), city varchar(30), state varchar(30), pincode varchar(20));
+
+# Create a table to store the value of Signup2.
+create table signupTwo (formno varchar(20),  religion varchar(20), category varchar(20), income varchar(20), education_qualification varchar(20), occupation varchar(20), pan_no varchar(20), aadhar_no varchar(20), senior_citizen varchar(10), existing_acc varchar(10));
+
+# Create a table to store the value of Signup3.
+create table signupThree (formno varchar(20),  accGroup varchar(30), cardNo varchar(30), Pin varchar(20), facility varchar(200));
+
+# Create a table to store the value of Card no. and Pin generated.
+create table login (formno varchar(20),  card_no varchar(30), Pin varchar(20));
+
+# Create a table to store the values of all the transaction perform.
+create table bank(card_no varchar(30), date varchar(20), type varchar(20), amount varchar(20));
